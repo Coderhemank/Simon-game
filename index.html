@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <h1 id="game-name">Simon Game</h1>
+    <h1 id="game-desc">Memorize and repeat</h1>
+  </div>
+  <div class="mid-area">
+    <h1 id="highscore"></h1>
+    <h2 id="level-title"> -> <a onclick="startGame()">Start</a> <-</h2>
+  </div>
+  
+    <div class="game-area">
+       <div class="container">
+        <div class="row">
+          <div type="button" id="green" class="btn green"></div>
+          <div type="button" id="red" class="btn red"></div>
+        </div>
+
+        <div class="row">
+          <div type="button" id="yellow" class="btn yellow"></div>
+          <div type="button" id="blue" class="btn blue"></div>
+        </div>
+    </div>
+    </div>
+     <div class="foot-area">
+      <img id="mute-button" onclick="mute()" src="assets/volume-on.png" alt="Mute button">
+     </div>
+  
+ 
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
